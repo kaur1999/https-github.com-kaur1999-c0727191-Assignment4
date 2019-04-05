@@ -17,6 +17,7 @@ namespace bbabbbleen
         {
             Program p = new Program();
             p.Beowulf = new ArrayList();
+            p.ReadTextFiles();
         }
         public void Run()
         {
@@ -26,7 +27,7 @@ namespace bbabbbleen
         public void ReadTextFiles()
         {
             //Read file using StreamReader.Reads file line by line
-            using (StreamReader file = new StreamReader("c:/area51/beowulf.txt"))
+            using (StreamReader file = new StreamReader(@"U:\Users\727191\bableeen.txt"))
             {
                 int counter = 0;
                 string ln;
@@ -34,6 +35,8 @@ namespace bbabbbleen
                 {
                     Console.WriteLine(ln);
                     Beowulf.Add(ln);
+                    counter++;
+
 
                 }
                 file.Close();
