@@ -18,9 +18,11 @@ namespace bbabbbleen
             Program p = new Program();
             p.Beowulf = new ArrayList();
             p.ReadTextFiles();
+
         }
         public void Run()
         {
+
             this.ReadTextFiles();
         }
 
@@ -38,9 +40,11 @@ namespace bbabbbleen
                     counter++;
 
 
+
                 }
                 file.Close();
                 Console.WriteLine($"File has{counter}lines");
+                Console.WriteLine("File has {counter*5} words.");
             }
         }
         public int FindNumberofBlankSpaces(string line)
